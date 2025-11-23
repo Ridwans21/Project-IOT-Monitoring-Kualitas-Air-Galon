@@ -1,0 +1,722 @@
+[
+    {
+        "id": "9d6d6840b531b98f",
+        "type": "tab",
+        "label": "Kandungan Air",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d27b4309ad391037",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "99027f72c23184f0",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "airgalon",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "c7999e641f9ea31c",
+        "type": "ui_tab",
+        "name": "Monitoring Air Galon",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1edf93b40904af42",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0033ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#0055ff",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#0055ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0055ff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#4d88ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0055ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 65,
+                "sy": 51,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d8168211788aa7ef",
+        "type": "ui_group",
+        "name": "Grafik",
+        "tab": "c7999e641f9ea31c",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8cc77f3354624157",
+        "type": "ui_group",
+        "name": "Monitoring Air Galon",
+        "tab": "c7999e641f9ea31c",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "607087edda1a2e3b",
+        "type": "ui_group",
+        "name": "Database",
+        "tab": "c7999e641f9ea31c",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0e98f4c8554ebb38",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.90.244",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8d1583b5e9310cc2",
+        "type": "mqtt in",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "topic": "sensor/airgalon",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "0e98f4c8554ebb38",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "9d8d06554f4b3900"
+            ]
+        ]
+    },
+    {
+        "id": "9d8d06554f4b3900",
+        "type": "json",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "e93ff3d2663575da",
+                "9a84051a220617af",
+                "d69e992872c52163",
+                "f674f8fe371c49e9"
+            ]
+        ]
+    },
+    {
+        "id": "e93ff3d2663575da",
+        "type": "debug",
+        "z": "9d6d6840b531b98f",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8b9790706a027cb7",
+        "type": "mysql",
+        "z": "9d6d6840b531b98f",
+        "mydb": "99027f72c23184f0",
+        "name": "MYSQL",
+        "x": 720,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a84051a220617af",
+        "type": "function",
+        "z": "9d6d6840b531b98f",
+        "name": "Generate SQL Query",
+        "func": "var ph = msg.payload.ph;\nvar tds = msg.payload.tds;\nvar turbidity = msg.payload.turbidity;\n\nmsg.topic = \"INSERT INTO data_sensor (ph, tds, turbidity) VALUES (\" + ph + \",\" + tds + \",\" + turbidity + \")\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "8b9790706a027cb7"
+            ]
+        ]
+    },
+    {
+        "id": "d69e992872c52163",
+        "type": "function",
+        "z": "9d6d6840b531b98f",
+        "name": "Dashboard",
+        "func": "var ph = msg.payload.ph;\nvar tds = msg.payload.tds;\nvar turbidity = msg.payload.turbidity;\n\nvar status = \"Layak\";\nif (ph < 6.5 || ph > 8.5 || tds > 500 || turbidity > 5.0) {\n    status = \"Tidak Layak\";\n}\n\nmsg.payload = {\n    ph: ph,\n    tds: tds,\n    turbidity: turbidity,\n    status: status\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "7a2003150bd19095",
+                "4611dc1f4d50e235",
+                "4554102d2c4e5a1b",
+                "cadab1ec05d56b91"
+            ]
+        ]
+    },
+    {
+        "id": "7a2003150bd19095",
+        "type": "ui_gauge",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "group": "8cc77f3354624157",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "pH",
+        "label": "pH",
+        "format": "{{msg.payload.ph}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4611dc1f4d50e235",
+        "type": "ui_gauge",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "group": "8cc77f3354624157",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "TDS",
+        "label": "ppm",
+        "format": "{{msg.payload.tds}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4554102d2c4e5a1b",
+        "type": "ui_gauge",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "group": "8cc77f3354624157",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Kekeruhan (NTU)",
+        "label": "NTU",
+        "format": "{{msg.payload.turbidity}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cadab1ec05d56b91",
+        "type": "ui_text",
+        "z": "9d6d6840b531b98f",
+        "group": "607087edda1a2e3b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hasil",
+        "format": "{{msg.payload.status}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "14d05f9048e2da84",
+        "type": "ui_chart",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "group": "d8168211788aa7ef",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Grafik Kualitas pH",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "14",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f674f8fe371c49e9",
+        "type": "function",
+        "z": "9d6d6840b531b98f",
+        "name": "Chart",
+        "func": "return [\n    { topic: \"pH\", payload: msg.payload.ph },\n    { topic: \"TDS\", payload: msg.payload.tds },\n    { topic: \"Turbidity\", payload: msg.payload.turbidity }\n];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "14d05f9048e2da84",
+                "af2cabbe6fbbe52b",
+                "ec910a09695f2779"
+            ]
+        ]
+    },
+    {
+        "id": "ec910a09695f2779",
+        "type": "ui_chart",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "group": "d8168211788aa7ef",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Grafik Kualitas Turbidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "10",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af2cabbe6fbbe52b",
+        "type": "ui_chart",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "group": "d8168211788aa7ef",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Grafik Kualitas TDS",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fed3eb08404f12cd",
+        "type": "mysql",
+        "z": "9d6d6840b531b98f",
+        "mydb": "99027f72c23184f0",
+        "name": "Database",
+        "x": 240,
+        "y": 340,
+        "wires": [
+            [
+                "dd04ff429c1c9f36"
+            ]
+        ]
+    },
+    {
+        "id": "92305b74d4689378",
+        "type": "ui_table",
+        "z": "9d6d6840b531b98f",
+        "group": "607087edda1a2e3b",
+        "name": "Database",
+        "order": 1,
+        "width": "6",
+        "height": "11",
+        "columns": [
+            {
+                "field": "id",
+                "title": "ID",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "ph",
+                "title": "pH",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "tds",
+                "title": "TDS",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "turbidity",
+                "title": "Turbidity",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "timestamp",
+                "title": "waktu",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 380,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e9fca7fecd2d6cb9",
+        "type": "inject",
+        "z": "9d6d6840b531b98f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM data_sensor",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 340,
+        "wires": [
+            [
+                "fed3eb08404f12cd"
+            ]
+        ]
+    },
+    {
+        "id": "dd04ff429c1c9f36",
+        "type": "function",
+        "z": "9d6d6840b531b98f",
+        "name": "Database",
+        "func": "msg.payload = msg.payload.reverse();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "92305b74d4689378"
+            ]
+        ]
+    }
+]
